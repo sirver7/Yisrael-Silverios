@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label> Ingrese la cantidad de creditos </label> 
+    <input type="number" id="Calcula">
+    <button onClick="presionar()">Calcular</button>
+    <br>
+    <br>
+    <label id="hola"> </label>
+    <script>
+        function presionar(){
+            var Okey;
+        var Calcular;
+        Okey=document.getElementById("Calcula").value;
+        Calcular=Okey*500; 
+        document.getElementById("hola").innerHTML="El total a pagar es RD$"+ Calcular;
+        }
+    </script>
+
+</body>
+</html>
